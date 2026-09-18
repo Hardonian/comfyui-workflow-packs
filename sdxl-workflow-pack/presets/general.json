@@ -1,0 +1,8 @@
+{
+  "positive": "cinematic photograph, dramatic lighting, intricate detail, professional photography, 8k uhd, masterpiece, best quality",
+  "negative": "ugly, blurry, low quality, deformed, watermark, text, logo, worst quality, low resolution, artifacts",
+  "width": 1024,
+  "height": 1024,
+  "steps": 25,
+  "cfg": 7.5
+}

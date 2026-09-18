@@ -1,0 +1,108 @@
+{
+  "_comment": "SDXL general workflow. Required: sd_xl_base_1.0.safetensors (or any SDXL checkpoint).",
+  "3": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    },
+    "inputs": {
+      "seed": -1,
+      "steps": 25,
+      "cfg": 7.5,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "latent_image": [
+        "5",
+        0
+      ]
+    }
+  },
+  "4": {
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load SDXL Checkpoint"
+    },
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent"
+    },
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive Prompt"
+    },
+    "inputs": {
+      "text": "cinematic photograph, dramatic lighting, intricate detail, professional photography, 8k uhd, masterpiece, best quality",
+      "clip": [
+        "4",
+        1
+      ]
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative Prompt"
+    },
+    "inputs": {
+      "text": "ugly, blurry, low quality, deformed, watermark, text, logo, worst quality, low resolution, artifacts",
+      "clip": [
+        "4",
+        1
+      ]
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    },
+    "inputs": {
+      "samples": [
+        "3",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    },
+    "inputs": {
+      "filename_prefix": "sdxl_general",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  }
+}

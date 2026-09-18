@@ -1,0 +1,8 @@
+{
+  "positive": "professional fashion photography, stylish clothing on mannequin, clean white studio background, soft even lighting, editorial fashion, high-end boutique, sharp fabric texture, masterpiece, best quality, 8k uhd, catalog photography",
+  "negative": "low quality, blurry, wrinkled fabric, harsh shadows, overexposed, underexposed, watermark, text, logo, artifacts, noise, worst quality, distorted, cheap look",
+  "width": 1024,
+  "height": 1024,
+  "steps": 25,
+  "cfg": 7.5
+}

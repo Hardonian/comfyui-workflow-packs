@@ -1,0 +1,8 @@
+{
+  "positive": "professional jewelry photography, sparkling gemstone, black velvet background, dramatic studio lighting, macro detail, light refraction, luxury jewelry advertisement, sharp focus on facets, masterpiece, best quality, 8k uhd, commercial photography",
+  "negative": "low quality, blurry, dull stones, harsh shadows, overexposed, underexposed, watermark, text, logo, artifacts, noise, worst quality, distorted, cheap metal, plastic look",
+  "width": 1024,
+  "height": 1024,
+  "steps": 25,
+  "cfg": 7.5
+}

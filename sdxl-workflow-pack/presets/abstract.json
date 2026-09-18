@@ -1,0 +1,8 @@
+{
+  "positive": "abstract digital art, vibrant colors, flowing shapes, geometric patterns, modern art style, creative composition, ethereal glow, dynamic movement, artistic masterpiece, best quality, high resolution, unique creative vision",
+  "negative": "low quality, blurry, realistic photo, watermark, text, logo, artifacts, noise, worst quality, low resolution, dull colors, boring composition, generic",
+  "width": 1024,
+  "height": 1024,
+  "steps": 25,
+  "cfg": 7.5
+}

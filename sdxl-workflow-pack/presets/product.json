@@ -1,0 +1,8 @@
+{
+  "positive": "professional product photography, white background, studio lighting, soft shadows, commercial photography, clean composition, sharp focus, high resolution, e-commerce style, catalog photography, masterpiece, best quality, 8k uhd",
+  "negative": "low quality, blurry, busy background, harsh shadows, overexposed, underexposed, watermark, text, logo, artifacts, noise, worst quality, low resolution, distorted, cluttered",
+  "width": 1024,
+  "height": 1024,
+  "steps": 25,
+  "cfg": 7.5
+}

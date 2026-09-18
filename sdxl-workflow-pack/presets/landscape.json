@@ -1,0 +1,8 @@
+{
+  "positive": "breathtaking landscape photography, golden hour lighting, dramatic sky, rolling hills, vibrant colors, National Geographic style, panoramic view, ultra detailed, sharp focus, professional photography, masterpiece, best quality, 8k uhd, HDR",
+  "negative": "low quality, blurry, overexposed, underexposed, flat lighting, dull colors, watermark, text, logo, artifacts, noise, worst quality, low resolution, distorted, cropped",
+  "width": 1024,
+  "height": 1024,
+  "steps": 25,
+  "cfg": 7.5
+}

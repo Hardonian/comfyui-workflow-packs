@@ -1,0 +1,8 @@
+{
+  "positive": "professional portrait photography, sharp focus on face, beautiful skin texture, natural lighting, studio lighting, bokeh background, 85mm lens, f/1.8, high-end fashion photography, magazine quality, photorealistic, masterpiece, best quality, 8k uhd",
+  "negative": "low quality, blurry, distorted face, deformed features, ugly, disfigured, bad anatomy, extra limbs, watermark, text, logo, cropped, out of frame, worst quality, low resolution, artifacts, noise",
+  "width": 1024,
+  "height": 1024,
+  "steps": 25,
+  "cfg": 7.5
+}

@@ -1,0 +1,8 @@
+{
+  "positive": "professional food photography, appetizing dish, warm lighting, shallow depth of field, rustic wooden table, fresh ingredients, vibrant colors, editorial food photography, Michelin star presentation, masterpiece, best quality, 8k uhd",
+  "negative": "low quality, blurry, unappetizing, plastic look, harsh flash, cold lighting, watermark, text, logo, artifacts, noise, worst quality, low resolution, messy, dirty",
+  "width": 1024,
+  "height": 1024,
+  "steps": 25,
+  "cfg": 7.5
+}

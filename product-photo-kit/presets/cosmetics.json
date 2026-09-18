@@ -1,0 +1,8 @@
+{
+  "positive": "professional cosmetics photography, luxury beauty product, marble surface, soft studio lighting, elegant composition, high-end beauty brand, glass and metallic textures, reflections, masterpiece, best quality, 8k uhd, commercial photography",
+  "negative": "low quality, blurry, cheap plastic, harsh shadows, overexposed, underexposed, watermark, text, logo, artifacts, noise, worst quality, distorted, messy background",
+  "width": 1024,
+  "height": 1024,
+  "steps": 25,
+  "cfg": 7.5
+}
