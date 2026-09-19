@@ -1,0 +1,10 @@
+{
+  "positive": "professional corporate headshot photograph of a confident woman in her 30s wearing a navy blazer, warm genuine smile showing teeth, sharp focus on eyes with catchlight, clean neutral grey seamless background, beauty dish main light with softbox fill, 85mm f/1.4 lens shallow depth of field, skin texture visible but flattering, professional color grading with warm undertones, magazine quality portrait photography",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+  "width": 1024,
+  "height": 1024,
+  "steps": 32,
+  "cfg": 7.0,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

@@ -1,0 +1,10 @@
+{
+  "positive": "high-end beauty portrait photograph for luxury cosmetics campaign, flawless luminous skin with natural highlight and contour, soft diffused beauty dish lighting from directly above, subtle fill light from below, pastel pink and cream color palette, hair styled in loose waves, wearing minimal elegant jewelry, clean white background with soft gradient, retouched commercial beauty photography quality",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+  "width": 1024,
+  "height": 1024,
+  "steps": 32,
+  "cfg": 7.5,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

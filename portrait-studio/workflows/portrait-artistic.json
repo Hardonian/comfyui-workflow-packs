@@ -1,0 +1,108 @@
+{
+  "_comment": "SDXL artistic \u2014 production quality. sd_xl_base_1.0.safetensors",
+  "3": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    },
+    "inputs": {
+      "seed": -1,
+      "steps": 35,
+      "cfg": 8.0,
+      "sampler_name": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "latent_image": [
+        "5",
+        0
+      ]
+    }
+  },
+  "4": {
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint"
+    },
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Latent"
+    },
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive"
+    },
+    "inputs": {
+      "text": "fine art portrait photograph inspired by Caravaggio, dramatic chiaroscuro lighting with single warm light source from upper left, deep rich shadows, Renaissance painting composition, subject wearing simple dark clothing against black background, oil painting texture and color depth, museum gallery quality, timeless classical portrait, warm golden skin tones against deep browns and blacks",
+      "clip": [
+        "4",
+        1
+      ]
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative"
+    },
+    "inputs": {
+      "text": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+      "clip": [
+        "4",
+        1
+      ]
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    },
+    "inputs": {
+      "samples": [
+        "3",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "filename_prefix": "portrait_artistic",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  }
+}

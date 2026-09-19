@@ -1,0 +1,10 @@
+{
+  "positive": "professional blog featured image, modern minimalist home office workspace, MacBook on clean white desk with monstera plant and ceramic coffee mug, soft natural morning light from large window, warm neutral color palette, editorial interior photography style, shallow depth of field, clean composition with negative space for text overlay",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+  "width": 1200,
+  "height": 630,
+  "steps": 28,
+  "cfg": 7.0,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

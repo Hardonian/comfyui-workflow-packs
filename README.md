@@ -7,71 +7,36 @@ Production-ready ComfyUI workflow packs for SDXL image generation. Drag-and-drop
 ## Packs
 
 ### [SDXL Workflow Pack — $19](https://scottrmhardie.gumroad.com/l/ggtuzd)
-
-5 complete workflows for any subject:
-
-| Workflow | Use Case |
-|----------|----------|
-| General Purpose | Versatile, any subject |
-| Portrait | People, fashion, headshots |
-| Product Photo | E-commerce, white background |
-| Landscape | Nature, cityscapes, golden hour |
-| Abstract Art | Creative, geometric, modern art |
-
-**Includes:** 5 workflow JSONs + 5 prompt presets + 5 sample images
-
-📂 [`sdxl-workflow-pack/`](./sdxl-workflow-pack/)
-
----
+5 complete workflows: general, portrait, product photo, landscape, abstract art.
 
 ### [Product Photo Kit — $29](https://scottrmhardie.gumroad.com/l/wkhie)
+5 category workflows: electronics, food, fashion, cosmetics, jewelry.
 
-5 category-specific workflows for e-commerce:
+### [Portrait Studio — $29](https://scottrmhardie.gumroad.com/l/xttsl)
+5 portrait workflows: headshot, fashion, lifestyle, artistic, beauty.
 
-| Category | Best For |
-|----------|----------|
-| Electronics | Headphones, phones, gadgets |
-| Food & Beverage | Dishes, drinks, restaurants |
-| Fashion | Clothing, shoes, bags |
-| Cosmetics | Perfume, skincare, makeup |
-| Jewelry | Rings, necklaces, watches |
-
-**Includes:** 5 workflow JSONs + 5 prompt presets + 5 sample images
-
-📂 [`product-photo-kit/`](./product-photo-kit/)
-
----
+### [Thumbnail Creator Kit — $29](https://scottrmhardie.gumroad.com/l/hkpdn)
+5 platform workflows: YouTube (1280×720), podcast (1024²), social (1080²), blog (1200×630), e-commerce (1200×628).
 
 ## Requirements
-
-- **ComfyUI** installed and running
-- **SDXL checkpoint** (sd_xl_base_1.0.safetensors or compatible)
-- **GPU with ≥8 GB VRAM** (12 GB+ recommended)
+- ComfyUI + any SDXL checkpoint + GPU with ≥8GB VRAM
 - Works on NVIDIA, AMD (ROCm), Apple Silicon
 
 ## Quick Start
+1. Download from [Gumroad](https://scottrmhardie.gumroad.com)
+2. Open ComfyUI → drag `.json` into canvas
+3. Edit prompt (node "6") → Queue Prompt
 
-1. Download a pack from [Gumroad](https://scottrmhardie.gumroad.com)
-2. Open ComfyUI
-3. Drag any `.json` workflow file into the canvas
-4. Edit the prompt (node "6") to describe your subject
-5. Click **Queue Prompt** → get a professional image in seconds
+## Quality Settings
+All workflows use production-grade settings:
+- Sampler: `dpmpp_2m_sde` (best quality/speed balance)
+- Scheduler: `karras` (smoother noise schedule)
+- Steps: 28-35 (quality-optimized per workflow type)
+- Comprehensive negative prompts (handles common artifacts)
 
-## Customization
-
-- **Change subject:** Edit the positive prompt in node "6"
-- **Adjust quality:** Modify `steps` (15-40) and `cfg` (5-10) in node "3"
-- **Change resolution:** Edit `width`/`height` in node "5"
-- **Use different checkpoint:** Change `ckpt_name` in node "4"
-
-## ComfyUI API
-
-These workflows are in ComfyUI API format. For programmatic execution, see [`Hardonian/comfyui-api`](https://github.com/Hardonian/comfyui-api).
+## Related
+- [ComfyUI API](https://github.com/Hardonian/comfyui-api) — programmatic workflow execution
+- [AI Automated Systems](https://aiautomatedsystems.ca) — storefront
 
 ## License
-
-Personal and commercial use. Modify, redistribute, and use outputs commercially. No attribution required.
-
----
-
-**[Buy on Gumroad →](https://scottrmhardie.gumroad.com)** · **[ComfyUI API →](https://github.com/Hardonian/comfyui-api)** · **[AI Automated Systems →](https://aiautomatedsystems.ca)**
+Personal and commercial use. No attribution required.

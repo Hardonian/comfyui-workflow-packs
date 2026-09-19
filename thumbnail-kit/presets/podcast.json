@@ -1,0 +1,10 @@
+{
+  "positive": "professional podcast cover art design, premium studio microphone with gold accents, dark gradient background transitioning from deep navy to rich purple, soft bokeh light circles, professional audio branding aesthetic, clean modern minimalist composition, studio quality lighting, centered symmetrical layout suitable for square crop",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+  "width": 1024,
+  "height": 1024,
+  "steps": 30,
+  "cfg": 7.5,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

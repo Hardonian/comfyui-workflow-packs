@@ -1,0 +1,10 @@
+{
+  "positive": "stunning YouTube video thumbnail image, dramatic gaming setup with RGB lighting and neon purple and cyan glow, high contrast vibrant saturated colors, ultra sharp detail, professional digital art, eye-catching composition with rule of thirds, modern trending aesthetic, dark background with bright accent lighting, cinematic depth of field",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+  "width": 1280,
+  "height": 720,
+  "steps": 30,
+  "cfg": 8.0,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

@@ -1,0 +1,10 @@
+{
+  "positive": "authentic lifestyle portrait photograph, young man with genuine laughter sitting at outdoor cafe table, golden hour warm sunlight from the side creating rim light on hair, bokeh city lights in background, shallow depth of field f/2.0, natural skin tones, candid documentary style, editorial travel photography, warm color palette with orange and amber tones",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+  "width": 1024,
+  "height": 1024,
+  "steps": 30,
+  "cfg": 7.0,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

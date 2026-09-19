@@ -1,0 +1,10 @@
+{
+  "positive": "premium product hero shot, matte black wireless noise-canceling headphones on white marble surface, professional studio lighting with soft shadows, three-point lighting setup, clean pure white background, sharp focus on product details, e-commerce catalog quality, commercial product photography, subtle reflection on surface",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+  "width": 1200,
+  "height": 628,
+  "steps": 30,
+  "cfg": 7.5,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

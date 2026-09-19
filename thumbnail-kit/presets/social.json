@@ -1,0 +1,10 @@
+{
+  "positive": "viral Instagram-worthy food photography, overhead flat lay shot of colorful acai bowl topped with fresh berries granola and edible flowers, marble countertop surface, soft natural window light from the side, vibrant saturated colors, clean modern aesthetic, professional food styling, shallow depth of field, warm inviting color palette",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+  "width": 1080,
+  "height": 1080,
+  "steps": 30,
+  "cfg": 7.5,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

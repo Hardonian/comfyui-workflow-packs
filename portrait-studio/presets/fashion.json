@@ -1,0 +1,10 @@
+{
+  "positive": "high fashion editorial portrait photograph, model with striking angular features and intense gaze, dramatic Rembrandt lighting with single key light, deep shadows on one side of face, wearing avant-garde black designer outfit, studio grey backdrop with subtle texture, Vogue Italia editorial style, shot on medium format camera, rich color depth, fashion photography masterpiece",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, username, cropped, worst quality, normal quality, jpeg artifacts, pixelated, grainy, noise, out of focus, overexposed, underexposed, oversaturated, washed out, cartoon, anime, 3d render, painting, illustration",
+  "width": 1024,
+  "height": 1024,
+  "steps": 32,
+  "cfg": 7.5,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}
