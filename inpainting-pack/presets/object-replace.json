@@ -1,0 +1,8 @@
+{
+  "positive": "professional product placement, studio lighting, commercial quality, seamless integration, masterpiece, best quality, 8k uhd",
+  "negative": "low quality, blurry, distorted, deformed, ugly, watermark, text, logo, worst quality, jpeg artifacts, cartoon, anime, oversaturated, noisy, extra limbs, bad anatomy",
+  "method": "inpaint",
+  "steps": 30,
+  "cfg": 7.0,
+  "denoise": 0.85
+}

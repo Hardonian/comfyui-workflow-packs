@@ -1,0 +1,8 @@
+{
+  "positive": "clean background, seamless fill, natural texture, no artifacts, studio quality, masterpiece, best quality",
+  "negative": "low quality, blurry, distorted, deformed, ugly, watermark, text, logo, worst quality, jpeg artifacts, cartoon, anime, oversaturated, noisy, extra limbs, bad anatomy",
+  "method": "inpaint",
+  "steps": 30,
+  "cfg": 7.0,
+  "denoise": 0.85
+}

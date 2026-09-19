@@ -1,0 +1,136 @@
+{
+  "_comment": "Inpainting workflow: object-remove. Requires input image + mask.",
+  "1": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Input"
+    },
+    "inputs": {
+      "image": "input.png"
+    }
+  },
+  "2": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Mask"
+    },
+    "inputs": {
+      "image": "mask.png"
+    }
+  },
+  "3": {
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint"
+    },
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "VAEEncodeForInpaint",
+    "_meta": {
+      "title": "VAE Encode Inpaint"
+    },
+    "inputs": {
+      "pixels": [
+        "1",
+        0
+      ],
+      "vae": [
+        "3",
+        2
+      ],
+      "mask": [
+        "2",
+        0
+      ],
+      "grow_mask_by": 6
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive"
+    },
+    "inputs": {
+      "text": "clean background, seamless fill, natural texture, no artifacts, studio quality, masterpiece, best quality",
+      "clip": [
+        "3",
+        1
+      ]
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative"
+    },
+    "inputs": {
+      "text": "low quality, blurry, distorted, deformed, ugly, watermark, text, logo, worst quality, jpeg artifacts, cartoon, anime, oversaturated, noisy, extra limbs, bad anatomy",
+      "clip": [
+        "3",
+        1
+      ]
+    }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample"
+    },
+    "inputs": {
+      "seed": 0,
+      "steps": 30,
+      "cfg": 7.0,
+      "sampler_name": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "denoise": 0.85,
+      "model": [
+        "3",
+        0
+      ],
+      "positive": [
+        "5",
+        0
+      ],
+      "negative": [
+        "6",
+        0
+      ],
+      "latent_image": [
+        "4",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    },
+    "inputs": {
+      "samples": [
+        "7",
+        0
+      ],
+      "vae": [
+        "3",
+        2
+      ]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "filename_prefix": "inpaint_object-remove",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  }
+}
