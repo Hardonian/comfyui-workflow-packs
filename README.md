@@ -1,16 +1,37 @@
-# ComfyUI Workflow Packs
+# ComfyUI Workflow Packs — Production-Ready SDXL Workflows for Product Photography, Portraits & More
 
-Production-ready ComfyUI workflow packs for SDXL image generation. Drag-and-drop ready — no prompt engineering skills required.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![ComfyUI](https://img.shields.io/badge/ComfyUI-Compatible-orange.svg)](https://github.com/comfyanonymous/ComfyUI)
+[![SDXL](https://img.shields.io/badge/SDXL-1.0-blue.svg)](https://stability.ai/stable-diffusion)
+[![Gumroad](https://img.shields.io/badge/Buy-Gumroad-pink.svg)](https://scottrmhardie.gumroad.com)
+[![GitHub Stars](https://img.shields.io/github/stars/Hardonian/comfyui-workflow-packs?style=social)](https://github.com/Hardonian/comfyui-workflow-packs)
 
-**[Buy on Gumroad →](https://scottrmhardie.gumroad.com)**
+> **Drag-and-drop ComfyUI workflows for SDXL image generation.** Product photography, portraits, thumbnails, fashion lookbooks, and more — production-tested with optimized quality settings. No prompt engineering skills required.
 
-## Packs
+**[Buy on Gumroad →](https://scottrmhardie.gumroad.com)** · **[AI Automated Systems](https://aiautomatedsystems.ca)**
+
+---
+
+## 🎯 What You Get
+
+Professional ComfyUI workflow JSON files for **Stable Diffusion SDXL** — optimized for:
+
+- **E-commerce product photography** — clean backgrounds, consistent lighting, multiple angles
+- **Portrait photography** — headshots, fashion, lifestyle, beauty retouching
+- **YouTube & social media thumbnails** — platform-specific dimensions baked in
+- **Fashion lookbooks** — editorial-quality AI-generated fashion imagery
+- **Landscape & abstract art** — creative generation with style control
+- **Upscaling & enhancement** — 4x upscale pipelines with artifact removal
+
+---
+
+## 📦 Workflow Packs
 
 ### [SDXL Workflow Pack — $19](https://scottrmhardie.gumroad.com/l/ggtuzd)
 5 complete workflows: general, portrait, product photo, landscape, abstract art.
 
 ### [Product Photo Kit — $29](https://scottrmhardie.gumroad.com/l/wkhie)
-5 category workflows: electronics, food, fashion, cosmetics, jewelry.
+5 category workflows: electronics, food, fashion, cosmetics, jewelry. **Perfect for e-commerce stores.**
 
 ### [Portrait Studio — $29](https://scottrmhardie.gumroad.com/l/xttsl)
 5 portrait workflows: headshot, fashion, lifestyle, artistic, beauty.
@@ -18,25 +39,114 @@ Production-ready ComfyUI workflow packs for SDXL image generation. Drag-and-drop
 ### [Thumbnail Creator Kit — $29](https://scottrmhardie.gumroad.com/l/hkpdn)
 5 platform workflows: YouTube (1280×720), podcast (1024²), social (1080²), blog (1200×630), e-commerce (1200×628).
 
-## Requirements
-- ComfyUI + any SDXL checkpoint + GPU with ≥8GB VRAM
-- Works on NVIDIA, AMD (ROCm), Apple Silicon
+### Controlnet Essentials Pack
+Advanced controlnet workflows for precise image composition and style transfer.
 
-## Quick Start
-1. Download from [Gumroad](https://scottrmhardie.gumroad.com)
+### Fashion Lookbook Pack
+Editorial-style fashion AI workflows for lookbooks and catalog generation.
+
+### Inpainting Pack
+Professional inpainting and outpainting workflows for image editing.
+
+### Img2Img Style Transfer Pack
+Style transfer and img2img workflows for creative image transformation.
+
+### Upscale & Enhance Pack
+4x upscaling with artifact removal and detail enhancement pipelines.
+
+---
+
+## 🚀 Quick Start
+
+1. **[Download from Gumroad](https://scottrmhardie.gumroad.com)**
 2. Open ComfyUI → drag `.json` into canvas
 3. Edit prompt (node "6") → Queue Prompt
 
-## Quality Settings
-All workflows use production-grade settings:
-- Sampler: `dpmpp_2m_sde` (best quality/speed balance)
-- Scheduler: `karras` (smoother noise schedule)
-- Steps: 28-35 (quality-optimized per workflow type)
-- Comprehensive negative prompts (handles common artifacts)
+**[→ Full Getting Started Guide](docs/getting-started.md)**
 
-## Related
-- [ComfyUI API](https://github.com/Hardonian/comfyui-api) — programmatic workflow execution
-- [AI Automated Systems](https://aiautomatedsystems.ca) — storefront
+---
+
+## 📸 Screenshots
+
+<!-- Add workflow preview images here -->
+| Product Photography | Portrait Studio | Thumbnails |
+|---|---|---|
+| ![Product](product-photo-kit/previews/) | ![Portrait](portrait-studio/previews/) | ![Thumbnails](thumbnail-kit/previews/) |
+
+---
+
+## ⚙️ Requirements
+
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) (latest version)
+- Any **SDXL checkpoint** (Stable Diffusion XL 1.0)
+- GPU with **≥8 GB VRAM** (NVIDIA recommended)
+- Works on **NVIDIA**, **AMD (ROCm)**, and **Apple Silicon**
+
+---
+
+## 🎛️ Quality Settings
+
+All workflows use production-grade defaults:
+
+| Setting | Value | Why |
+|---------|-------|-----|
+| Sampler | `dpmpp_2m_sde` | Best quality/speed balance |
+| Scheduler | `karras` | Smoother noise schedule |
+| Steps | 28–35 | Optimized per workflow type |
+| Negative prompts | Comprehensive | Handles common artifacts |
+
+---
+
+## ❓ FAQ
+
+**Q: Do I need prompt engineering skills?**
+A: No. Each workflow has a pre-configured prompt node — just edit the text and queue.
+
+**Q: Can I use these for commercial projects?**
+A: Yes. Personal and commercial use allowed. No attribution required.
+
+**Q: What SDXL checkpoints work best?**
+A: Any SDXL 1.0 checkpoint. We recommend Juggernaut XL, RealVisXL, or DreamShaper XL for photography.
+
+**Q: Do I need ControlNet models?**
+A: Only for the Controlnet Essentials Pack. Other packs work with just a base SDXL checkpoint.
+
+**Q: Can I modify the workflows?**
+A: Absolutely. The JSON files are fully editable in ComfyUI's visual editor.
+
+**[→ Full FAQ](docs/faq.md)**
+
+---
+
+## 🛠️ Troubleshooting
+
+Having issues? Check our **[Troubleshooting Guide](docs/troubleshooting.md)** for solutions to common problems.
+
+---
+
+## 🔗 Related Projects
+
+- [AI Ops Toolkit](https://github.com/Hardonian/ai-ops-toolkit) — CLI tools for GPU monitoring, Ollama management, service health
+- [AI Prompt Templates](https://github.com/Hardonian/ai-prompt-templates) — 200+ tested prompt templates for ChatGPT, Claude, Gemini
+- [AI Automated Systems](https://aiautomatedsystems.ca) — Full product catalog
+
+---
+
+## 💬 Support
+
+- **Documentation:** [docs/](docs/)
+- **Issues:** [GitHub Issues](https://github.com/Hardonian/comfyui-workflow-packs/issues)
+- **Products:** [Gumroad Store](https://scottrmhardie.gumroad.com)
+- **Website:** [aiautomatedsystems.ca](https://aiautomatedsystems.ca)
+
+---
+
+## 🏷️ Keywords
+
+ComfyUI workflows, SDXL workflow pack, product photography AI, stable diffusion product photos, e-commerce image generation, AI portrait studio, SDXL thumbnails, ComfyUI drag and drop, AI image generation workflows, product photo AI tool, stable diffusion XL workflows, ComfyUI presets, AI fashion lookbook, SDXL ControlNet
+
+---
 
 ## License
-Personal and commercial use. No attribution required.
+
+MIT — Personal and commercial use. No attribution required.
