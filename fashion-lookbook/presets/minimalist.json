@@ -1,0 +1,8 @@
+{
+  "positive": "minimalist fashion photography, model wearing clean white clothing on white background, soft even lighting, no harsh shadows, Scandinavian fashion aesthetic, clean lines, simple elegant composition, high-end catalog style, masterpiece, best quality, 8k uhd",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, cropped, worst quality, jpeg artifacts, pixelated, grainy, cartoon, anime, 3d render",
+  "width": 1024,
+  "height": 1344,
+  "steps": 30,
+  "cfg": 7.0
+}

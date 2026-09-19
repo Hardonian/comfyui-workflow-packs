@@ -1,0 +1,8 @@
+{
+  "positive": "luxury fashion campaign photography, model in elegant evening gown, marble interior background, dramatic chandelier lighting, opulent setting, high-end fashion brand aesthetic, rich deep colors, sophisticated composition, fashion photography masterpiece, 8k uhd",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, extra fingers, mutated hands, bad anatomy, bad proportions, watermark, text, logo, signature, cropped, worst quality, jpeg artifacts, pixelated, grainy, cartoon, anime, 3d render",
+  "width": 1024,
+  "height": 1344,
+  "steps": 32,
+  "cfg": 8.0
+}
