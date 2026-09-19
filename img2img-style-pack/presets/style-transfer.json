@@ -1,0 +1,9 @@
+{
+  "positive": "transform this photo into oil painting style, thick visible brushstrokes, rich warm color palette, impressionist painting texture, museum gallery quality, artistic masterpiece",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, watermark, text, logo, worst quality, jpeg artifacts, pixelated, grainy, cartoon, anime",
+  "denoise": 0.65,
+  "steps": 30,
+  "cfg": 7.0,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

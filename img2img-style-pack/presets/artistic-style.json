@@ -1,0 +1,9 @@
+{
+  "positive": "cyberpunk neon aesthetic, vibrant purple and cyan lighting, futuristic city glow, holographic reflections, blade runner atmosphere, cinematic photography, masterpiece",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, watermark, text, logo, worst quality, jpeg artifacts, pixelated, grainy, cartoon, anime",
+  "denoise": 0.6,
+  "steps": 30,
+  "cfg": 7.0,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}

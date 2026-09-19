@@ -1,0 +1,9 @@
+{
+  "positive": "professional studio photography, clean white seamless background, soft even lighting, product isolated on white, commercial photography quality, sharp focus",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, extra limbs, watermark, text, logo, worst quality, jpeg artifacts, pixelated, grainy, cartoon, anime",
+  "denoise": 0.55,
+  "steps": 30,
+  "cfg": 7.0,
+  "sampler": "dpmpp_2m_sde",
+  "scheduler": "karras"
+}
