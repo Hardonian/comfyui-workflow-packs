@@ -6,7 +6,7 @@ Production-ready ComfyUI workflow packs for SDXL image generation. Drag-and-drop
 
 ## Packs
 
-### [SDXL Workflow Pack — $19](https://scottrmhardie.gumroad.com/l/vkdjdd)
+### [SDXL Workflow Pack — $19](https://scottrmhardie.gumroad.com/l/ggtuzd)
 
 5 complete workflows for any subject:
 
