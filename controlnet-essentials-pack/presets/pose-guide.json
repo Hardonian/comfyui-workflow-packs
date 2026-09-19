@@ -1,0 +1,8 @@
+{
+  "positive": "dynamic fashion photography, model pose, professional studio, magazine quality, detailed clothing, masterpiece, best quality, 8k uhd",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, watermark, text, logo, worst quality, jpeg artifacts, cartoon, anime, oversaturated, noisy, extra limbs, bad anatomy, bad hands",
+  "controlnet_model": "controlnet-openpose-sdxl.safetensors",
+  "strength": 0.75,
+  "steps": 30,
+  "cfg": 7.0
+}

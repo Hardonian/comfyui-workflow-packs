@@ -1,0 +1,153 @@
+{
+  "_comment": "SDXL ControlNet canny-edge workflow: canny-edge.",
+  "1": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Control Image"
+    },
+    "inputs": {
+      "image": "control_input.png"
+    }
+  },
+  "2": {
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint"
+    },
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "3": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive"
+    },
+    "inputs": {
+      "text": "product photography, sharp details, professional studio lighting, commercial quality, masterpiece, best quality, 8k uhd",
+      "clip": [
+        "2",
+        1
+      ]
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative"
+    },
+    "inputs": {
+      "text": "low quality, blurry, distorted, deformed, ugly, disfigured, watermark, text, logo, worst quality, jpeg artifacts, cartoon, anime, oversaturated, noisy, extra limbs, bad anatomy, bad hands",
+      "clip": [
+        "2",
+        1
+      ]
+    }
+  },
+  "5": {
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "ControlNet Model"
+    },
+    "inputs": {
+      "control_net_name": "controlnet-canny-sdxl.safetensors"
+    }
+  },
+  "6": {
+    "class_type": "ControlNetApplyAdvanced",
+    "_meta": {
+      "title": "Apply ControlNet"
+    },
+    "inputs": {
+      "positive": [
+        "3",
+        0
+      ],
+      "negative": [
+        "4",
+        0
+      ],
+      "control_net": [
+        "5",
+        0
+      ],
+      "image": [
+        "1",
+        0
+      ],
+      "strength": 0.7,
+      "start_percent": 0.0,
+      "end_percent": 1.0
+    }
+  },
+  "7": {
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent"
+    },
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample"
+    },
+    "inputs": {
+      "seed": 0,
+      "steps": 30,
+      "cfg": 7.0,
+      "sampler_name": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": [
+        "2",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "6",
+        1
+      ],
+      "latent_image": [
+        "7",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "2",
+        2
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "filename_prefix": "cn_canny-edge",
+      "images": [
+        "9",
+        0
+      ]
+    }
+  }
+}

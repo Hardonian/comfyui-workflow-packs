@@ -1,0 +1,8 @@
+{
+  "positive": "interior design photography, architectural rendering, professional lighting, realistic materials, masterpiece, best quality, 8k uhd",
+  "negative": "low quality, blurry, distorted, deformed, ugly, disfigured, watermark, text, logo, worst quality, jpeg artifacts, cartoon, anime, oversaturated, noisy, extra limbs, bad anatomy, bad hands",
+  "controlnet_model": "controlnet-depth-sdxl.safetensors",
+  "strength": 0.6,
+  "steps": 30,
+  "cfg": 7.0
+}
