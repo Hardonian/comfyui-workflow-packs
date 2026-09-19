@@ -1,0 +1,8 @@
+{
+  "positive": "professional portrait retouching, natural skin texture, enhanced eyes, improved lighting, beauty photography, magazine quality, subtle enhancement, masterpiece, best quality",
+  "negative": "low quality, blurry, distorted, deformed, ugly, watermark, text, logo, worst quality, jpeg artifacts, pixelated, grainy, cartoon, anime, oversaturated, noisy",
+  "denoise": 0.25,
+  "steps": 20,
+  "cfg": 5.0,
+  "upscaler": "RealESRGAN_x4plus.pth"
+}

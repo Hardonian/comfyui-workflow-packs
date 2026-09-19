@@ -1,0 +1,8 @@
+{
+  "positive": "professional photography, enhanced details, sharp focus, natural colors, improved lighting, skin texture, fabric detail, magazine quality, masterpiece, best quality, 8k uhd",
+  "negative": "low quality, blurry, distorted, deformed, ugly, watermark, text, logo, worst quality, jpeg artifacts, pixelated, grainy, cartoon, anime, oversaturated, noisy",
+  "denoise": 0.25,
+  "steps": 20,
+  "cfg": 5.0,
+  "upscaler": "RealESRGAN_x4plus.pth"
+}

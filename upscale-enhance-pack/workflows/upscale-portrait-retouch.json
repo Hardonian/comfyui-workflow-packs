@@ -1,0 +1,147 @@
+{
+  "_comment": "SDXL upscale portrait-retouch. Requires sd_xl_base_1.0.safetensors + input image.",
+  "1": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    },
+    "inputs": {
+      "image": "input.png"
+    }
+  },
+  "2": {
+    "class_type": "UpscaleModelLoader",
+    "_meta": {
+      "title": "Load Upscaler"
+    },
+    "inputs": {
+      "model_name": "RealESRGAN_x4plus.pth"
+    }
+  },
+  "3": {
+    "class_type": "ImageUpscaleWithModel",
+    "_meta": {
+      "title": "Upscale"
+    },
+    "inputs": {
+      "upscale_model": [
+        "2",
+        0
+      ],
+      "image": [
+        "1",
+        0
+      ]
+    }
+  },
+  "4": {
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint"
+    },
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    },
+    "inputs": {
+      "pixels": [
+        "3",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive"
+    },
+    "inputs": {
+      "text": "professional portrait retouching, natural skin texture, enhanced eyes, improved lighting, beauty photography, magazine quality, subtle enhancement, masterpiece, best quality",
+      "clip": [
+        "4",
+        1
+      ]
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative"
+    },
+    "inputs": {
+      "text": "low quality, blurry, distorted, deformed, ugly, watermark, text, logo, worst quality, jpeg artifacts, pixelated, grainy, cartoon, anime, oversaturated, noisy",
+      "clip": [
+        "4",
+        1
+      ]
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Refine"
+    },
+    "inputs": {
+      "seed": 0,
+      "steps": 20,
+      "cfg": 5.0,
+      "sampler_name": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "denoise": 0.25,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "latent_image": [
+        "5",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "filename_prefix": "upscale_portrait-retouch",
+      "images": [
+        "9",
+        0
+      ]
+    }
+  }
+}
