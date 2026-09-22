@@ -153,6 +153,23 @@ Learn how to get the most from these workflows:
 
 More guides at [aiautomatedsystems.ca/blog](https://aiautomatedsystems.ca)
 
+## ❓ FAQ
+
+**Q: Do I need a GPU?**
+A: Yes. ComfyUI requires a GPU with at least 8GB VRAM (12GB+ recommended). Works with NVIDIA RTX 3060, 4060, or better.
+
+**Q: Is this better than Midjourney for product photography?**
+A: For e-commerce, yes. ComfyUI gives you full control over composition, lighting, and batch processing. Midjourney is better for creative/artistic work. See our [comparison guide](https://aiautomatedsystems.ca/blog/comfyui-vs-midjourney-product-photography-2026).
+
+**Q: How do I batch-process 100+ product images?**
+A: Each workflow includes a batch processing node. See our [batch automation guide](https://aiautomatedsystems.ca/blog/comfyui-batch-processing-automation-guide).
+
+**Q: Can I train on my own products?**
+A: Yes. LoRA training workflows let you fine-tune on your actual product photos. See the [LoRA training guide](https://aiautomatedsystems.ca/blog/comfyui-lora-training-guide-sdxl).
+
+**Q: What SDXL checkpoints work best?**
+A: We recommend Juggernaut XL for products and RealVisXL for portraits. Full list in our [best checkpoints guide](https://aiautomatedsystems.ca/blog/best-sdxl-checkpoints-product-photography-2026).
+
 ## 🏷️ Keywords
 
 ComfyUI workflows, SDXL workflow pack, product photography AI, stable diffusion product photos, e-commerce image generation, AI portrait studio, SDXL thumbnails, ComfyUI drag and drop, AI image generation workflows, product photo AI tool, stable diffusion XL workflows, ComfyUI presets, AI fashion lookbook, SDXL ControlNet
