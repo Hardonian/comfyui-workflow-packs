@@ -141,6 +141,18 @@ Having issues? Check our **[Troubleshooting Guide](docs/troubleshooting.md)** fo
 
 ---
 
+## 📚 Guides & Tutorials
+
+Learn how to get the most from these workflows:
+
+- [ControlNet for Beginners](https://aiautomatedsystems.ca/blog/controlnet-tutorial-beginners-guide)
+- [5 ComfyUI Workflows Every E-Commerce Seller Needs](https://aiautomatedsystems.ca/blog/2026-09-20-5-comfyui-workflows-every-ecommerce-seller-needs)
+- [ComfyUI Batch Processing Automation](https://aiautomatedsystems.ca/blog/comfyui-batch-processing-automation-guide)
+- [SDXL LoRA Training Guide](https://aiautomatedsystems.ca/blog/comfyui-lora-training-guide-sdxl)
+- [Amazon Product Photography AI Workflow](https://aiautomatedsystems.ca/blog/amazon-product-photography-ai-workflow)
+
+More guides at [aiautomatedsystems.ca/blog](https://aiautomatedsystems.ca)
+
 ## 🏷️ Keywords
 
 ComfyUI workflows, SDXL workflow pack, product photography AI, stable diffusion product photos, e-commerce image generation, AI portrait studio, SDXL thumbnails, ComfyUI drag and drop, AI image generation workflows, product photo AI tool, stable diffusion XL workflows, ComfyUI presets, AI fashion lookbook, SDXL ControlNet
