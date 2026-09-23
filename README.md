@@ -97,6 +97,20 @@ All workflows use production-grade defaults:
 
 ---
 
+## 🎬 NEW: Video Workflow Packs
+
+| Pack | Model | GPU | What it does | Price |
+|---|---|---|---|---|
+| **Product Video Demos** | Wan 2.2 (14B) | 12GB+ | Product photo → 5-sec rotating video | $39 |
+| **Video + Audio Bundle** | LTX 2.3 (22B) | 12GB+ | Text → video with synced audio | $39 |
+| **Cinematic Video Pack** | HunyuanVideo 1.5 | 24GB+ | Photo → cinematic video, 1080p upscaled | $39 |
+
+All video packs include step-by-step READMEs, GPU-specific settings, and production-ready workflows.
+
+[**Browse all packs →**](https://www.aiautomatedsystems.ca)
+
+---
+
 ## ❓ FAQ
 
 **Q: Do I need prompt engineering skills?**
